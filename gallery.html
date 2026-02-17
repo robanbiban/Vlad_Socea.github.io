@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poze cu Vlad</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    transition: 0.3s;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+}
+
+.toggle-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    background-color: #0077ff;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.dark-mode header {
+    background-color: #000;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    Poze cu vlad 
+    <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+</header>
+
+<div class="container">
+
+    <a href="index.html" class="back-btn">⬅Profil</a>
+
+    <div class="gallery-grid">
+        <img src="imagini/vlad1.jpeg">
+        <img src="imagini/vlad2.jpeg">
+        <img src="imagini/vlad3.jpeg">
+        <img src="imagini/vlad4.jpeg">
+        <img src="imagini/vlad5.jpeg">
+        <img src="imagini/vlad6.jpeg">
+        <img src="imagini/vlad7.jpeg">
+        <img src="imagini/vlad8.jpeg">
+        <img src="imagini/vlad9.jpeg">
+        <img src="imagini/vlad10.jpeg">
+        <img src="imagini/vlad11.jpeg">
+        <img src="imagini/vlad12.jpeg">
+        <img src="imagini/vlad13.jpeg">
+        <img src="imagini/vlad14.jpeg">
+        <img src="imagini/vlad15.jpeg">
+        <img src="imagini/vlad16.jpeg">
+        <img src="imagini/vlad17.jpeg">
+        <img src="imagini/vlad18.jpeg">
+        <img src="imagini/vlad19.jpeg">
+        <img src="imagini/vlad20.jpeg">
+        <img src="imagini/vlad21.jpeg">
+        <img src="imagini/vlad22.jpeg">
+        <img src="imagini/vlad23.jpeg">
+        <img src="imagini/vlad24.jpeg">
+        <img src="imagini/vlad25.jpeg">
+    </div>
+
+</div>
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
